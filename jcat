@@ -1,0 +1,4 @@
+#!/bin/bash
+set -eo pipefail
+
+cat "${1}" | jq -C . | less -R
